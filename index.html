@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Matías Petrone Piazza - Técnico de sonido</title>
+<script>
+if('scrollRestoration' in history){history.scrollRestoration='manual'}
+if(location.hash){history.replaceState(null,'',location.pathname+location.search)}
+function toTop(){window.scrollTo({top:0,left:0,behavior:'instant'})}
+toTop();
+window.addEventListener('pageshow',toTop);
+window.addEventListener('load',toTop);
+</script>
+<link rel="preload" as="image" href="neve_fondo.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -27,7 +36,7 @@ nav a{text-decoration:none;font-size:.95rem;color:#fff}
 nav a:hover{opacity:.7}
 nav ul a{opacity:1}
 section{max-width:1100px;margin:0 auto;padding:88px 24px}
-#hero{max-width:none;min-height:100svh;display:flex;align-items:center;color:#fff;padding:120px 0 72px;background:linear-gradient(rgba(23,23,23,.25),rgba(23,23,23,.45)),url("neve_fondo.png") center/cover no-repeat #171717}
+#hero{max-width:none;min-height:100svh;display:flex;align-items:center;color:#fff;padding:120px 0 72px;background:linear-gradient(rgba(23,23,23,.25),rgba(23,23,23,.45)),url("neve_fondo.jpg") center/cover no-repeat #171717}
 #hero .inner{width:100%;max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center}
 #hero .where{color:#C9C9C9}
 .reel{display:block;width:100%;max-width:460px;height:auto;justify-self:end;mix-blend-mode:screen;animation:spin 3.2s cubic-bezier(.22,.7,.2,1) both}
@@ -54,7 +63,7 @@ h2{font:800 clamp(1.8rem,4vw,2.6rem)/1.1 var(--head);letter-spacing:-.02em;margi
 .servicios{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 .servicios li{font:500 clamp(1.3rem,3vw,1.8rem)/1.2 var(--head);letter-spacing:-.01em}
 .servicios li::before{content:"★";content:"★" / "";color:#fff;font-size:.6em;vertical-align:.12em;margin-right:1em}
-footer{max-width:1100px;margin:0 auto;padding:24px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer{max-width:1100px;margin:0 auto;padding:24px;color:#7a7a7a;font-size:.9rem;text-align:center;border-top:1px solid var(--line)}
 @media (max-width:600px){
 nav{flex-wrap:nowrap;padding:20px 24px}
 nav ul{gap:14px}
@@ -143,7 +152,7 @@ var id=vid(k.y);if(!id)return;
 var li=document.createElement('li');
 li.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?rel=0" title="'+esc(k.t)+'" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p>'+esc(k.t)+'</p>'+(k.r?'<p class="role">'+esc(k.r)+'</p>':'');
 ul.appendChild(li);
-}); 
+});
 })();
 </script>
 </body>
