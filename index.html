@@ -75,17 +75,19 @@ nav{flex-wrap:nowrap;padding:20px 24px}
 nav ul{gap:14px}
 nav a{font-size:.85rem}
 .ig svg{width:20px;height:20px}
-#hero{align-items:flex-end;padding:96px 0 56px}
+#hero{align-items:flex-start;padding:140px 0 56px}
 #hero .inner{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name reel" "lead lead" "where where";gap:0 16px;align-items:center}
 #hero .txt{display:contents}
 h1{grid-area:name;font-size:clamp(2.1rem,10vw,3rem);margin-bottom:0}
 h1 span{display:block}
-.reel{grid-area:reel;width:clamp(120px,38vw,170px);max-width:none;justify-self:end;align-self:center}
+.reel{grid-area:reel;width:min(44vw,200px);max-width:none;justify-self:end;align-self:center}
 .lead{grid-area:lead;font-size:1.1rem;margin-top:20px}
+.lead span{display:block}
 .where{grid-area:where;font-size:.95rem}
 section:not(#hero){padding-top:64px;padding-bottom:64px}
 }
 @media (max-width:360px){nav ul{gap:10px}nav a{font-size:.78rem}}
+@media (max-width:340px){.reel{width:38vw}}
 </style>
 </head>
 <body>
@@ -98,7 +100,7 @@ section:not(#hero){padding-top:64px;padding-bottom:64px}
 <div class="inner">
 <div class="txt">
 <h1><span>Matías</span> <span>Petrone</span> <span>Piazza</span></h1>
-<p class="lead">Técnico en Grabación y Post Producción de Audio</p>
+<p class="lead"><span>Técnico en Grabación</span> <span>y Post Producción</span> <span>de Audio</span></p>
 <p class="where">Buenos Aires, Argentina</p>
 </div>
 <img class="reel" src="reel.png" width="600" height="600" alt="Carrete de cinta magnética">
