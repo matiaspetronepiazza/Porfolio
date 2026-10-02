@@ -53,7 +53,6 @@ nav ul{animation-delay:0s}
 @media (prefers-reduced-motion:reduce){.reel,nav ul,.ig,#hero h1,#hero .lead,#hero .where{animation:none}html{scroll-behavior:auto}}
 h2{font:800 clamp(1.8rem,4vw,2.6rem)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 32px}
 #sobremi p{max-width:62ch;margin:0 0 1.1em}
-#sobremi p a{color:var(--accent)}
 .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 .about-imgs{display:flex;flex-direction:column;gap:28px}
 .about-imgs img{display:block;width:100%;height:auto;border-radius:4px}
@@ -65,6 +64,12 @@ h2{font:800 clamp(1.8rem,4vw,2.6rem)/1.1 var(--head);letter-spacing:-.02em;margi
 .videos p{margin:12px 0 0;font:500 1.05rem var(--head)}
 .videos p.role{margin:4px 0 0;font:300 .95rem var(--body);color:var(--muted)}
 @media (max-width:760px){.videos{grid-template-columns:1fr;gap:36px}}
+.plugin{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:center;margin-top:56px}
+.plugin img{display:block;width:100%;height:auto;border-radius:4px}
+.plugin p{margin:0 0 1.1em;max-width:48ch}
+.plugin p:last-child{margin-bottom:0}
+.plugin p a{color:var(--accent)}
+@media (max-width:760px){.plugin{grid-template-columns:1fr;gap:24px;margin-top:40px}}
 #trabajos,#contact{max-width:none;background:#fff;color:#171717;--muted:#51636F;--accent:#1F6F78;padding:88px max(24px,calc((100% - 1052px)/2))}
 .servicios{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 .servicios li{font:500 clamp(1.3rem,3vw,1.8rem)/1.2 var(--head);letter-spacing:-.01em}
@@ -100,7 +105,7 @@ section:not(#hero){padding-top:64px;padding-bottom:64px}
 <div class="inner">
 <div class="txt">
 <h1><span>Matías</span> <span>Petrone</span> <span>Piazza</span></h1>
-<p class="lead"><span>Técnico en Grabación y</span> <span>Post Producción de Audio</p>
+<p class="lead"><span>Técnico en Grabación y</span> <span>Post Producción de Audio</span></p>
 <p class="where">Buenos Aires, Argentina</p>
 </div>
 <img class="reel" src="reel.png" width="600" height="600" alt="Carrete de cinta magnética">
@@ -114,12 +119,9 @@ section:not(#hero){padding-top:64px;padding-bottom:64px}
 <p>Soy Matías, técnico de Grabación y Post Producción de Audio (Tecson, 2023).</p>
 <p>Desde chico me interesé por la música y mi primer acercamiento fue cuando me regalaron mi primera guitarra. Años después fui encontrando mi camino dentro de la producción musical y en el campo de la grabación y la mezcla.</p>
 <p>Trabajé grabando, produciendo y mezclando diferentes proyectos en mi home studio. Esas experiencias me permitieron desarrollar tanto mis conocimientos técnicos como mi criterio a la hora de trabajar con músicos.</p>
-<p>Además en septiembre de 2026 lance mi propio plugin VST, el "J&amp;H2000". Inspirado en el icónico pedal "Jekyll &amp; Hyde" popularizado por The Strokes a principios de los 2000.</p>
-<p>Más info de mi plugin acá: <a href="https://www.plainsounds.com/" target="_blank" rel="noopener">plainsounds.com</a></p>
 </div>
 <div class="about-imgs">
 <img src="mifoto.JPG" width="3133" height="2350" alt="Matías Petrone Piazza sentado en el piso con una guitarra, rodeado de pedales y equipos" loading="lazy">
-<img src="webpedal.png" width="2880" height="1356" alt="Página web del plugin J&amp;H The 2000's Overdrive" loading="lazy">
 </div>
 </div>
 </section>
@@ -127,6 +129,13 @@ section:not(#hero){padding-top:64px;padding-bottom:64px}
 <section id="trabajos">
 <h2>Mis Trabajos</h2>
 <ul class="videos" id="tracks"></ul>
+<div class="plugin">
+<img src="webpedal.png" width="2880" height="1356" alt="Página web del plugin J&amp;H The 2000's Overdrive" loading="lazy">
+<div class="plugin-text">
+<p>En septiembre de 2026 lance mi propio plugin VST, el "J&amp;H2000". Inspirado en el icónico pedal "Jekyll &amp; Hyde" popularizado por The Strokes a principios de los 2000.</p>
+<p>Más info de mi plugin acá: <a href="https://www.plainsounds.com/" target="_blank" rel="noopener">plainsounds.com</a></p>
+</div>
+</div>
 </section>
 
 <section id="servicios">
