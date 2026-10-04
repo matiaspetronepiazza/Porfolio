@@ -60,7 +60,9 @@ h2{font:800 clamp(1.8rem,4vw,2.6rem)/1.1 var(--head);letter-spacing:-.02em;margi
 #contact{text-align:center}
 #contact p{margin:0 0 .35em}
 #contact a.mail{font:800 clamp(1.2rem,3.6vw,2rem)/1.2 var(--head);letter-spacing:-.02em;word-break:break-all}
-#contact a.tel{word-break:normal;white-space:nowrap}
+#contact a.tel,#contact a.insta{word-break:normal;white-space:nowrap}
+#contact a.insta{display:inline-flex;align-items:center;gap:.4em}
+#contact a.insta svg{width:1em;height:1em;flex:none}
 .videos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:48px 24px}
 .videos iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}
 .videos p{margin:12px 0 0;font:500 1.05rem var(--head)}
@@ -155,6 +157,7 @@ section:not(#hero){padding-top:64px;padding-bottom:64px}
 <h2>Contacto</h2>
 <p><a class="mail" href="mailto:matupetrone@gmail.com">matupetrone@gmail.com</a></p>
 <p><a class="mail tel" href="tel:+541134748456">+54 11 3474-8456</a></p>
+<p><a class="mail insta" href="https://www.instagram.com/matupetrone/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>@matupetrone</a></p>
 </section>
 
 <footer>© 2026 Matías Petrone Piazza. Todos los derechos reservados.</footer>
