@@ -192,6 +192,7 @@ var TRACKS=[
 {t:"Venus Club - Todo Va a Estar Bien",r:"Producción, grabación, edición y mezcla.",y:"https://www.youtube.com/watch?v=Iu0Fr7b1oDE"},
 {t:"Venus Club - No Queda Nada",r:"Producción, edición y Mezcla.",y:"https://www.youtube.com/watch?v=q5BXLICAYOA"}
 ];
+
 (function(){
 var ul=document.getElementById('tracks');
 function vid(u){var m=(u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:null}
@@ -208,13 +209,14 @@ ul.appendChild(li);
 <script>
 /* Carrusel del plugin. Agregá más diapositivas en la lista MEDIA.
    Formatos: {type:"img",src:"pedal3d.webp",alt:"descripción"}
-             {type:"youtube",url:"https://www.youtube.com/watch?v=XXXXXXXXXXX",title:"título"}
-             {type:"video",src:"videodemopedal.mp4",poster:"portada.jpg",title:"título"} */
+              {type:"youtube",url:"https://www.youtube.com/watch?v=XXXXXXXXXXX",title:"título"}
+              {type:"video",src:"videodemopedal.mp4",poster:"portada.jpg",title:"título"} */
 (function(){
 var MEDIA=[
-{type:"video",src:"videodemopedal.mp4",poster:"portada.jpg",title:"título"}
+{type:"video",src:"videodemopedal.mp4",poster:"portada.jpg",title:"título"},
 {type:"img",src:"pedal3d.webp",alt:"descripción"}
 ];
+
 var root=document.getElementById('carousel'),track=document.getElementById('cTrack'),prev=document.getElementById('cPrev'),next=document.getElementById('cNext'),dotsBox=document.getElementById('cDots');
 var slides=[],dots=[],cur=0,tick=false;
 function ytId(u){var m=(u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:null}
@@ -265,5 +267,6 @@ window.addEventListener('resize',function(){track.scrollTo({left:cur*track.clien
 sync();
 })();
 </script>
+
 </body>
 </html>
